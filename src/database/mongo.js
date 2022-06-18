@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-export function connect() {
+module.exports = function connect() {
     const options = {
         useNewUrlParser:true,
         useUnifiedTopology:true,
