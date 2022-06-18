@@ -1,11 +1,11 @@
-const { Schema, Mongoose } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const reportSchema = new Schema({
+const rSchema = new Schema({
   title: String,
   description: String,
   image: String,
   location: String,
   author: String
 })
-mongoose.module('Report', reportSchema)
+let reportSchema = model('Report', rSchema);
 module.export = reportSchema;
