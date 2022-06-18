@@ -7,5 +7,5 @@ const rSchema = new Schema({
   location: String,
   author: String
 })
-let reportSchema = model('Report', rSchema);
+let reportSchema = model('Report', rSchema, 'Report');
 module.export = reportSchema;
