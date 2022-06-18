@@ -1,5 +1,4 @@
 const express = require('express');
-const PORT = 3000;
 const { connect } = require('./database/mongo');
 const app = express();
 const dotenv = require('dotenv');
@@ -23,7 +22,7 @@ app.post('/addreport', async(req, res) => {
 //await fetch(heroku-link/connect) 
 //await fetch(heroku-link/addreport/param1/param2/param3/param4)
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
