@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-module.exports = function connect() {
+function connect() {
     const options = {
         useNewUrlParser:true,
         useUnifiedTopology:true,
@@ -9,3 +9,7 @@ module.exports = function connect() {
     };
     mongoose.connect(process.env.MONGO_DB_PASSWORD, options);
 }
+
+module.exports = {
+    connect
+};
