@@ -23,6 +23,6 @@ app.post('/addreport', async(req, res) => {
 //await fetch(heroku-link/addreport/param1/param2/param3/param4)
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running`);
 });
 
